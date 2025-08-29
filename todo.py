@@ -17,7 +17,9 @@ def delete_task(remove):
     tasks.pop(remove)
      
 # Step 5: Mark task complete
-#def mark_complete(index):
+def mark_complete(index):
+    if 0 <= index <len(tasks):
+        tasks[index] = tasks[index] + " ✅"
     
 
 
@@ -33,6 +35,7 @@ if __name__ == "__main__":
     view_tasks()
     delete_task(0)
     view_tasks()
-   # mark_complete(0)
+    mark_complete(0)
+    view_tasks()
    # view_tasks()
    # save_tasks()
