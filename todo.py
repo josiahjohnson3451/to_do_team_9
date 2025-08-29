@@ -8,13 +8,13 @@ def add_task(task):
     tasks.append(task)
 
 # Step 3: View tasks
-def view_tasks(task):
+def view_tasks():
     for i, task in enumerate(tasks, start=1):
         print(f"{i}. {task}")
     
 
 # Step 4: Delete a task
-#def delete_task(index):
+def delete_task(index):
     
 
 
@@ -29,7 +29,7 @@ def view_tasks(task):
 
 
 # Demo flow (you can run this file directly: python todo.py)
-if __name__ == "__todo__":
+if __name__ == "__main__":
     add_task("Finish Cyber 201 assignment")
     add_task("Push code to GitHub")
     view_tasks()
